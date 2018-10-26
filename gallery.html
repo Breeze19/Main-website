@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap 4 Logo Carousel</title>
+
+  <meta charset="utf-8">
+
+  <meta name="description" content="Events">
+
+  <meta name="keywords" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4 Default CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <!-- Additional CSS -->
+  <link rel="stylesheet" href="css/gallery.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+
+<body style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <h1 class="text-center carousel-title" style="margin-top:5%;"><img src="img/festisite_instagram.png" style="width:30%;"></h1>
+                <hr>
+
+            </div>
+
+            <div id="instafeed-gallery-feed" class="gallery row no-gutter">
+
+            <!--  instagram feed will load here - markup below was used to structure images before loading them through instafeed -->
+
+            <!--   <div class="col-xs-12 col-sm-4">
+                <a href="{{image}}" data-caption="{{model.user.username}}, {{likes}} likes">
+                    <div class="img-featured-container">
+                        <div class="img-backdrop"></div>
+                        <div class="description-container">
+                            <p>{{caption}}</p>
+                        </div><img src="http://placehold.it/500x500" class="img-responsive">
+                    </div>
+                </a>
+            </div> -->
+
+            </div>
+
+            <button id="btn-instafeed-load" class="btn">Load more</button>
+
+    </div>
+    <!-- End of Container -->
+
+    <!-- JQuery Plugin -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JQuery Plugin -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+    <!-- Additional Javascript -->
+    <script src="js/gallery.js"></script>
+
+
+</body>
+</html>
