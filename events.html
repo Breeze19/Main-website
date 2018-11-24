@@ -19,14 +19,15 @@
     <link rel="shortcut icon" type="image/png" href="res/Blogo.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </style>
 
 </head>
 
-<body style="background-color:#212121;padding-left:0;">
+<body style="background-color:#212121;">
 
-  <div>
-    <div class="container-fluid" style="position: fixed;z-index:99; top: 0;">
+
+    <div class="container-fluid" style="position: fixed;z-index:99; top: 0;padding-left:0;">
       <div class="navbar transparent navbar-dark box-shadow navbar-fixed-top topnav">
         <div class="container-fluid d-flex justify-content-between">
           <a class="navbar-brand" href="#">
@@ -35,12 +36,12 @@
           <a class="nav-button ml-auto mr-4"><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
         </div>
       </div>
-      <div class="fixed-top main-menu" style="position: fixed;z-index:99; right:0;">
-        <div class="flex-center p-5">
+      <div class="fixed-top main-menu" style="position: fixed;z-index:99;">
+        <div class="flex-center">
           <ul class="nav flex-column">
             <li class="nav-item delay-1"><a class="nav-link" href="index.html">HOME</a></li>
             <li class="nav-item delay-2"><a class="nav-link" href="events.html">EVENTS</a></li>
-            <li class="nav-item delay-3"><a class="nav-link" href="#">GALLERY</a></li>
+            <li class="nav-item delay-3"><a class="nav-link" href="gallery.html">GALLERY</a></li>
             <li class="nav-item delay-4"><a class="nav-link" href="#">SPONSORS</a></li>
             <li class="nav-item delay-5"><a class="nav-link" href="#">BREAKFREE</a></li>
             <li class="nav-item delay-6"><a class="nav-link" href="#">CONTACT US</a></li>
@@ -97,17 +98,18 @@
         </div>
       </div>
     </div>
-  </div>
   <!--<div id="" style="background-color:#212121;">-->
   	<!--<div class="" id="Events">-->
       <!--<div class="">-->
-        <div class="main">
+        <div class="main" style="">
           <div class="container">
-              <div class="row">
+              <div class="row text-center">
                   <div class="col-md-12">
-                      <h1 class="text-center carousel-title"><img src="https://fontmeme.com/permalink/181025/9cd027a38d3266bc5c3f41654c3cdbd8.png" alt=""></h1>
+                      <h1 class="text-center carousel-title"><img class="reveal" src="https://fontmeme.com/permalink/181025/9cd027a38d3266bc5c3f41654c3cdbd8.png" alt=""></h1>
                   </div>
-                  <h4>Cultural</h4>
+                  <div class="row text-center">
+                    <h4>Cultural</h4>
+                  </div>
                   <div id="carouselExample1" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner" >
                           <div class="carousel-item active">
@@ -178,7 +180,9 @@
                           <span class="sr-only">Next</span>
                       </a>
                   </div>
-                  <h4>Technical</h4>
+                  <div class="row text-center">
+                    <h4>Technical</h4>
+                  </div>
                   <div id="carouselExample2" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner" >
                           <div class="carousel-item active">
@@ -239,7 +243,9 @@
                           <span class="sr-only">Next</span>
                       </a>
                   </div>
-                  <h4>Sports</h4>
+                  <div class="row text-center">
+                    <h4>Sports</h4>
+                  </div>
                   <div id="carouselExample3" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner" >
                           <div class="carousel-item active">
@@ -335,7 +341,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="js/events.js"></script>
-
+<script type="text/javascript">
+  import ScrollReveal from 'scrollreveal';
+  ScrollReveal().reveal('.reveal', { duration: 500,origin: 'bottom',opacity: null});
+</script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.nav-button').click(function(){

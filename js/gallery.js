@@ -1,31 +1,26 @@
-// How to get an access token:
-// http://jelled.com/instagram/access-token
+$(document).ready(function(){
 
-// TODO:
-// - improve UI
-// - make it easy to copy and paste image url
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
 
-// {{model.user.username}}, {{likes}} likes
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
 
-var galleryFeed = new Instafeed({
-  get: "user",
-  userId: 4622774,
-  accessToken: "4622774.7cbaeb5.ec8c5041b92b44ada03e4a4a9153bc54",
-  resolution: "standard_resolution",
-  useHttp: "true",
-  limit: 6,
-  template: '<div class="col-xs-12 col-sm-6 col-md-4"><a href="{{image}}"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="icon ion-heart"></i> {{likes}}</span><span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
-  target: "instafeed-gallery-feed",
-  after: function() {
-    // disable button if no more results to load
-    if (!this.hasNext()) {
-      btnInstafeedLoad.setAttribute('disabled', 'disabled');
-    }
-  },
-});
-galleryFeed.run();
+        }
+    });
 
-var btnInstafeedLoad = document.getElementById("btn-instafeed-load");
-btnInstafeedLoad.addEventListener("click", function() {
-  galleryFeed.next()
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
 });

@@ -1,78 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-  <title>Bootstrap 4 Logo Carousel</title>
-
-  <meta charset="utf-8">
-
-  <meta name="description" content="Events">
-
-  <meta name="keywords" content="">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap 4 Default CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-  <!-- Additional CSS -->
-  <link rel="stylesheet" href="css/gallery.css">
-
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Breeze'19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta name="author" content="Prakamya Mishra" />
+    <meta name="description" content="Breeze website" />
+    <meta name="keywords"  content="" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fullPage.js-master/dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullPage.js-master/examples/examples.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="shortcut icon" type="image/png" href="res/Blogo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</style>
 
 </head>
 
-<body style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);">
+<body style="background-color:#212121;padding-left:0;">
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-12">
-
-                <h1 class="text-center carousel-title" style="margin-top:5%;"><img src="img/festisite_instagram.png" style="width:30%;"></h1>
-                <hr>
-
-            </div>
-
-            <div id="instafeed-gallery-feed" class="gallery row no-gutter">
-
-            <!--  instagram feed will load here - markup below was used to structure images before loading them through instafeed -->
-
-            <!--   <div class="col-xs-12 col-sm-4">
-                <a href="{{image}}" data-caption="{{model.user.username}}, {{likes}} likes">
-                    <div class="img-featured-container">
-                        <div class="img-backdrop"></div>
-                        <div class="description-container">
-                            <p>{{caption}}</p>
-                        </div><img src="http://placehold.it/500x500" class="img-responsive">
-                    </div>
-                </a>
-            </div> -->
-
-            </div>
-
-            <button id="btn-instafeed-load" class="btn">Load more</button>
-
+  <div>
+    <div class="container-fluid" style="position: fixed;z-index:99; top: 0;">
+      <div class="navbar transparent navbar-dark box-shadow navbar-fixed-top topnav">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="res/Blogo.png" width="200" height="70" alt="">
+          </a>
+          <a class="nav-button ml-auto mr-4"><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
+        </div>
+      </div>
+      <div class="fixed-top main-menu" style="position: fixed;z-index:99; right:0;">
+        <div class="flex-center p-5">
+          <ul class="nav flex-column">
+            <li class="nav-item delay-1"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item delay-2"><a class="nav-link" href="events.html">EVENTS</a></li>
+            <li class="nav-item delay-3"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+            <li class="nav-item delay-4"><a class="nav-link" href="#">SPONSORS</a></li>
+            <li class="nav-item delay-5"><a class="nav-link" href="#">BREAKFREE</a></li>
+            <li class="nav-item delay-6"><a class="nav-link" href="#">CONTACT US</a></li>
+            <li class="nav-item delay-6">
+              <span style="font-size: 2rem;">
+                <i class="fab fa-facebook"></i>
+              </span>
+              <span style="font-size: 2rem;">
+                <i class="fab fa-youtube"></i>
+              </span>
+              <span style="font-size: 2rem;">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span style="font-size: 2rem;">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span style="font-size: 2rem;">
+                <i class="fab fa-linkedin"></i>
+              </span>
+              <span style="font-size: 2rem;">
+                <i class="fab fa-snapchat"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
     </div>
-    <!-- End of Container -->
+    </div>
+    <div class="container-fluid" style="position: fixed;z-index:99; bottom: 0;">
+      <div class="navbar transparent navbar-dark box-shadow navbar-fixed-top topnav">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="navbar-brand">
+            <span style="font-size: 2rem;">
+              <i class="fab fa-facebook"></i>
+            </span>
+            <span style="font-size: 2rem;">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span style="font-size: 2rem;">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <span style="font-size: 2rem;">
+              <i class="fab fa-twitter"></i>
+            </span>
+            <span style="font-size: 2rem;">
+              <i class="fab fa-linkedin"></i>
+            </span>
+            <span style="font-size: 2rem;">
+              <i class="fab fa-snapchat"></i>
+            </span>
+          </div>
+          <div class="justify-right">
+            <button type="button" class="btn btn-outline-light">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div id="" style="background-color:#212121;">-->
+  	<!--<div class="" id="Events">-->
+      <!--<div class="">-->
+        <div class="main">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h1 class="text-center carousel-title"><img src="https://fontmeme.com/permalink/181124/47edd4bab90fdf64408b0e5296c6a18d.png" alt="netflix-font" border="0"></h1>
+                  </div>
+              </div>
+              <div class="row justify-content-md-center">
+                      <div align="center">
+                          <button class="btn btn-default filter-button" data-filter="all">All</button>
+                          <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+                          <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+                          <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+                          <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+                      </div>
+                      <br/></div>
+                      <div class="row">
 
-    <!-- JQuery Plugin -->
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
 
-    <!-- Bootstrap JQuery Plugin -->
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
 
-    <!-- Additional Javascript -->
-    <script src="js/gallery.js"></script>
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+
+                          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                              <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                          </div>
+                      </div>
+          </div>
+        </div>
+          <!--</div>-->
+        <!--</div>-->
+  	   <!--</div>-->
+    </div>
+
+<script type="text/javascript" src="css/fullPage.js-master/dist/fullpage.js"></script>
+<script type="text/javascript" src="css/fullPage.js-master/dist/fullpage.extensions.min.js"></script>
+<script type="text/javascript" src="css/fullPage.js-master/examples/examples.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="js/gallery.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.nav-button').click(function(){
+    $('body').toggleClass('nav-open');
+    });
+  });
+</script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        //Navigation
+      	menu: '#menu',
+      	lockAnchors: true,
+      	navigation: true,
+      	navigationPosition: 'right',
+        sectionsColor: ['#212121'],
+        anchors: ['Events'],
+        navigationTooltips: ['Events'],
+        menu: '#menu',
+      	showActiveTooltip: true,
+      	slidesNavigation: true,
+      	slidesNavPosition: 'bottom',
+        /*afterLoad: function(origin, destination, direction){
+            //section 2
+            if(destination.index == 1){
+                document.querySelector('#About').querySelector('img').style.left = 0 + 'px';
+                document.querySelector('#About').querySelector('p').style.opacity = 1;
+            }
+
+            //back to original state
+            else if(origin && origin.index == 1){
+                document.querySelector('#About').querySelector('img').style.left = 130 + '%';
+                document.querySelector('#About').querySelector('p').style.opacity = 0;
+            }
+
+            //section 3 is using the state classes to fire the animation
+            //see the CSS code above!
+          },*/
+
+          css3: true,
+          scrollingSpeed: 1000,
+          slidesNavigation: true,
+          dragAndMove: true,
+          dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+          controlArrows: false
+
+
+
+    });
+</script>
 
 
 </body>

@@ -1,7 +1,5 @@
 body{
   /*background-color: rgb(20, 20, 20);*/
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .carousel-caption {
@@ -56,6 +54,11 @@ h4{
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .main{
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
   .carousel-title {
     font-size: 18px;
     margin-top: 20px; }
